@@ -1,6 +1,6 @@
 # Title: Lab 02
 
-This is directory contains source codes for lab 02.
+This is directory contains source codes for Lab 03 Exercise 5.
 
 ## Output from Exercise 1
 
