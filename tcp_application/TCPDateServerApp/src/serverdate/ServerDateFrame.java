@@ -107,6 +107,7 @@ public class ServerDateFrame extends JFrame
 	/**
 	 * This method arrange the GUI component on the frame
 	 */
+	
 	public void loadComponent() {
 		
 		// Get the server status panel and add to frame
@@ -127,6 +128,7 @@ public class ServerDateFrame extends JFrame
 	 * 
 	 * @param flag: status of the server
 	 */
+	
 	public void updateServerStatus(boolean flag) {
 		
 		String status = "Waiting for connection.";
@@ -143,6 +145,7 @@ public class ServerDateFrame extends JFrame
 	 * 
 	 * @param status: request status
 	 */
+	
 	public void updateRequestStatus (String status) {
 		
 		// Get current status displayed on the window
@@ -160,6 +163,7 @@ public class ServerDateFrame extends JFrame
 	 * 
 	 * @return font object
 	 */
+	
 	private Font getFontStyle() {
 		
 		Font font = new Font (Font.SANS_SERIF, Font.PLAIN, 30);

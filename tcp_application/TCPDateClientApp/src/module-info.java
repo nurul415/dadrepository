@@ -1,4 +1,4 @@
-module TCPDateClientApp 
+module clientdate 
 {
 	requires java.desktop;
 }
