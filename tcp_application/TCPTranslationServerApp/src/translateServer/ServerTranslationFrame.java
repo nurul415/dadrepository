@@ -1,4 +1,4 @@
-package servertext;
+package translateServer;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-public class ServerTextFrame extends JFrame
+public class ServerTranslationFrame extends JFrame
 {
 	private static final long serialVersionUID = 1L;
 	
@@ -25,7 +25,7 @@ public class ServerTextFrame extends JFrame
 	/**
 	 * The constructor organize the GUI component for the window.
 	 */
-	public ServerTextFrame() 
+	public ServerTranslationFrame() 
 	{
 		
 		// Default frame setting
