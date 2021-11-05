@@ -27,12 +27,8 @@ public class ServerTranslationApplication
 				// Accept client request for connection
 				Socket clientSocket = serverSocket.accept();
 
-				// Get translation
-				
-
 				// Create stream to write data on the network
-				DataOutputStream outputStream = 
-						new DataOutputStream(clientSocket.getOutputStream());
+				DataOutputStream outputStream = new DataOutputStream(clientSocket.getOutputStream());
 
 				// Send current date back to the client
 				outputStream.writeUTF(text1);
