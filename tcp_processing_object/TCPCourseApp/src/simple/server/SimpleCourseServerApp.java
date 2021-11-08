@@ -22,26 +22,22 @@ import course.CourseManager;
  * @author emalianakasmuri
  *
  */
-public class SimpleCourseServerApp 
-{
+public class SimpleCourseServerApp {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		
 		CourseManager courseManager = new CourseManager();
 		
 		System.out.println("Starting SimpleCourseServerApp");
 
-		try 
-		{
+		try {
 			
 			// Bind Serversocket to a port
 			int portNo = 4228;
 			ServerSocket serverSocket = new ServerSocket(portNo);
 			
 			// Server need to be alive forever
-			while (true) 
-			{
+			while (true) {
 
 				// Accept client request for connection
 				Socket clientSocket = serverSocket.accept();
@@ -69,9 +65,7 @@ public class SimpleCourseServerApp
 				
 			}
 
-		} 
-		catch (Exception ex) 
-		{
+		} catch (Exception ex) {
 
 			ex.printStackTrace();
 

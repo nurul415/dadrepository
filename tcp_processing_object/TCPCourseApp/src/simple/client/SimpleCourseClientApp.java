@@ -31,12 +31,10 @@ import course.Course;
  * @author emalianakasmuri
  *
  */
-public class SimpleCourseClientApp 
-{
+public class SimpleCourseClientApp {
 	
 	
-	public static void main(String args[]) 
-	{
+	public static void main(String args[]) {
 		
 		System.out.println("Launching SimpleCourseClientApp program");
 		
@@ -47,8 +45,7 @@ public class SimpleCourseClientApp
 		course.setEnName("Distributed Application Development");
 		course.setMsName("Pembangunan Aplikasi Teragih");
 		
-		try 
-		{
+		try {
 			
 			// Connect to server-side program
 			Socket socket = new Socket(InetAddress.getLocalHost(), 4228);
@@ -85,9 +82,7 @@ public class SimpleCourseClientApp
 			oos.close();
 			socket.close();
 
-		} 
-		catch (Exception ex) 
-		{
+		} catch (Exception ex) {
 
 		}
 		
