@@ -9,7 +9,7 @@ import java.net.Socket;
 import parcel.Parcel;
 import parcel.ParcelManager;
 
-public class SimpleParcelServerApp 
+public class SimplePaymentServerApp 
 {
 	public static void main(String[] args) 
 	{
@@ -19,7 +19,6 @@ public class SimpleParcelServerApp
 
 		try 
 		{
-			
 			// Bind Serversocket to a port
 			int portNo = 4228;
 			ServerSocket serverSocket = new ServerSocket(portNo);
@@ -49,8 +48,6 @@ public class SimpleParcelServerApp
 				// Close all streams
 				ois.close();
 				oos.close();
-				
-				
 			}
 
 		} catch (Exception ex) {
