@@ -1,0 +1,63 @@
+package test_gui;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.Font;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.Color;
+
+public class SwingTest {
+
+	private JFrame frmMainframe;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SwingTest window = new SwingTest();
+					window.frmMainframe.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public SwingTest() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmMainframe = new JFrame();
+		frmMainframe.getContentPane().addComponentListener(new ComponentAdapter() {
+			@Override
+			public void componentMoved(ComponentEvent e) {
+			}
+		});
+		frmMainframe.setFont(new Font("Arial", Font.BOLD, 13));
+		frmMainframe.setTitle("MainFrame");
+		frmMainframe.setBounds(100, 100, 450, 300);
+		frmMainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMainframe.getContentPane().setLayout(new BoxLayout(frmMainframe.getContentPane(), BoxLayout.X_AXIS));
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBackground(Color.ORANGE);
+		frmMainframe.getContentPane().add(lblNewLabel);
+	}
+
+}

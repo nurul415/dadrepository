@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\User\Desktop\BITP 3123 - DISTRIBUTED APPLICATION DEVELOPMENT\DAD_github\dadrepository\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3413725848.index
+3134191002.index
