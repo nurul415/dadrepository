@@ -14,6 +14,7 @@ Client:
 ## Output from all Exercise 
 
 Server:
+
 ![image](https://github.com/nurul415/dadrepository/blob/main/RMI/RMITemperatureApp/img/lab_6_server.PNG)
 
 Client:
