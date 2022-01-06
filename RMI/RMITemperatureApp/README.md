@@ -9,3 +9,12 @@ Server:
 
 Client:
 ![image](https://github.com/nurul415/dadrepository/blob/main/RMI/RMITemperatureApp/img/client.PNG)
+
+
+## Output from all Exercise 
+
+Server:
+![image](https://github.com/nurul415/dadrepository/blob/main/RMI/RMITemperatureApp/img/lab_6_server.PNG)
+
+Client:
+![image](https://github.com/nurul415/dadrepository/blob/main/RMI/RMITemperatureApp/img/lab_6_client.PNG)
