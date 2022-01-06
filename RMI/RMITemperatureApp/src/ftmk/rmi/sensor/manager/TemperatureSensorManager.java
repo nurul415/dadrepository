@@ -53,9 +53,9 @@ public class TemperatureSensorManager extends UnicastRemoteObject
 		week.put("Sunday", 33);
 		
 		double sum = 0;
-		for (int i : week.values()) 
+		for (int day : week.values()) 
 		{
-		    sum += i;
+		    sum += day;
 		}
 		
 		double average = sum / 7;
