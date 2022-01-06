@@ -20,14 +20,16 @@ public class TemperatureServerRMIApp {
 			
 			// Create interface object
 			TemperatureSensor sensorJasin = new TemperatureSensorManager();
+			TemperatureSensor sensorAyerKeroh = new TemperatureSensorManager();
 			
 			// Get registry
 			Registry rmiRegistry = LocateRegistry.getRegistry();
 			
 			// Register interface object as remote object
 			rmiRegistry.rebind("SensorJasin", sensorJasin);
+			rmiRegistry.rebind("SensorAyerKeroh", sensorAyerKeroh);
 			
-			System.out.println("SensorJasin is successfully registered");
+			System.out.println("SensorJasin and sensorAyerKeroh is successfully registered");
 			
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block

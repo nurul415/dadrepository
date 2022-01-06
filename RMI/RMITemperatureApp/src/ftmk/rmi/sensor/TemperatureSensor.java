@@ -2,6 +2,7 @@ package ftmk.rmi.sensor;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.HashMap;
 
 /**
  * This interface represents temperature sensor
@@ -19,5 +20,7 @@ public interface TemperatureSensor extends Remote {
 	 * @throws RemoteException
 	 */
 	public int getTemperature() throws RemoteException;
+	public HashMap<String, Integer> getWeekTemperature() throws RemoteException;
+	public double getAverageTemperature() throws RemoteException;
 
 }
